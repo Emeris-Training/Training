@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        Thread.sleep(20000)
+
         val intent = Intent(this, LoginActivity::class.java)
         //Started the intent
         startActivity(intent)
