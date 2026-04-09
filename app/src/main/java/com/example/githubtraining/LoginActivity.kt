@@ -24,7 +24,7 @@ class LoginActivity : AppCompatActivity() {
         val etPasswords = findViewById<EditText>(R.id.etPassword)
         val btnLogin = findViewById<Button>(R.id.btnLogin)
 
-        // Set Click Listener
+        // Set Click Listener added more here
         btnLogin.setOnClickListener {
             val username = etUsernames.text.toString().trim()
             val password = etPasswords.text.toString().trim()
