@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         val intent = Intent(this, LoginActivity::class.java)
-        //Started the intent
         startActivity(intent)
     }
 }
