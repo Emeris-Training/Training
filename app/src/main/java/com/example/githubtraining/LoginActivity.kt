@@ -20,14 +20,14 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
         // Initialize Views
-        val etUsername = findViewById<EditText>(R.id.etUsername)
-        val etPassword = findViewById<EditText>(R.id.etPassword)
+        val etUsernames = findViewById<EditText>(R.id.etUsername)
+        val etPasswords = findViewById<EditText>(R.id.etPassword)
         val btnLogin = findViewById<Button>(R.id.btnLogin)
 
         // Set Click Listener
         btnLogin.setOnClickListener {
-            val username = etUsername.text.toString().trim()
-            val password = etPassword.text.toString().trim()
+            val username = etUsernames.text.toString().trim()
+            val password = etPasswords.text.toString().trim()
 
             if (username.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
