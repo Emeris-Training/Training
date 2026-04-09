@@ -26,14 +26,14 @@ class LoginActivity : AppCompatActivity() {
 
         // Set Click Listener
         btnLogin.setOnClickListener {
-            val name = etUsername.text.toString().trim()
+            val username = etUsername.text.toString().trim()
             val password = etPassword.text.toString().trim()
 
-            if (name.isEmpty() || password.isEmpty()) {
+            if (username.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
             } else {
                 // Simple hardcoded check for demonstration
-                if (name == "admin" && password == "1234") {
+                if (username == "admin" && password == "1234") {
                     Toast.makeText(this, "Login Successful!", Toast.LENGTH_LONG).show()
                     // Add intent here to open the next Activity
                 } else {
