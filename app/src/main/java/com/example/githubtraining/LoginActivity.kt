@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
             if (username.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
             } else {
-                // Simple hardcoded check for demonstration
+                // Simple hardcoded check for demonstration added the password is 1234
                 if (username == "admin" && password == "1234") {
                     Toast.makeText(this, "Login Successful!", Toast.LENGTH_LONG).show()
                     // Add intent here to open the next Activity
